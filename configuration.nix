@@ -11,6 +11,15 @@ in
       ./hardware-configuration.nix
     ];
 
+  services.self-deploy = {
+     enable = true;
+     startAt = "hourly";
+     repository = "https://github.com/dbruc3/nix.git";
+     nixFile = "/etc/nixos/configuration.nix";
+     nixAttribute = "";
+     switchCommand = "switch";
+  };
+  
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
