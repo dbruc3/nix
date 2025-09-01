@@ -52,6 +52,7 @@ in
 
   environment.systemPackages = with pkgs; [
     vim
+    cmatrix
     tmux
     unstable.claude-code
     git
