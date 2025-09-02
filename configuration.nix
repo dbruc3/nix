@@ -15,6 +15,7 @@ in
      enable = true;
      startAt = "hourly";
      repository = "https://github.com/dbruc3/nix.git";
+     branch = "main"
      nixFile = "/etc/nixos/configuration.nix";
      nixAttribute = "";
      switchCommand = "switch";
